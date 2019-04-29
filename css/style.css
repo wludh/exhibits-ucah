@@ -810,12 +810,28 @@
     width: 70%;
     margin: auto; }
   #exhibit-pages ul {
-    list-style: decimal;
+    list-style: none;
     font-size: 21px;
     line-height: 31.5px;
-    font-family: "Caudex", serif; }
+    font-family: "Caudex", serif; 
+    overflow:hidden;
+
+  }
   #exhibit-pages li {
-    margin: 21px 0; }
+    float:left;
+    padding: 10px 1px;
+  }
+  
+
+   #exhibit-pages li:after {
+    content: " | ";
+   }
+
+  #exhibit-pages li a {
+  
+    
+  }
+
   .exhibit-block {
     overflow: hidden; }
   .exhibit-items + * {
