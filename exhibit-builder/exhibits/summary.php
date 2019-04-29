@@ -9,9 +9,18 @@
 
 <?php echo exhibit_builder_page_nav(); ?>
 
+<?php
+$pageTree = exhibit_builder_page_tree();
+if ($pageTree):
+?>
+<nav id="exhibit-pages">
+    <?php echo $pageTree; ?>
+</nav>
+<?php endif; ?>
+
 <div id="primary">
 <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-<div class="exhibit-description">
+<div class="rabbit-description">
     <?php echo $exhibitDescription; ?>
 </div>
 <?php endif; ?>
@@ -24,13 +33,6 @@
 <?php endif; ?>
 </div>
 
-<?php
-$pageTree = exhibit_builder_page_tree();
-if ($pageTree):
-?>
-<nav id="exhibit-pages">
-    <?php echo $pageTree; ?>
-</nav>
-<?php endif; ?>
+
 
 <?php echo foot(); ?>
