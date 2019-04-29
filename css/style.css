@@ -250,7 +250,8 @@
   /* @end */
   /* @group ----- Footer ----- */
   footer {
-    padding: 0 21px 21px; }
+    padding: 0 21px 21px; 
+    border-top: 1px solid #eee}
   /* @end */
   /* @group ----- Front Page ----- */
   #home #content {
@@ -799,11 +800,15 @@
     .exhibits.summary .summary-header h1 {
       position: relative;
       z-index: 1;
-      padding: 42px 21px; }
+      padding: 42px 21px; 
+        font-size:30px;
+    line-height: 30px;}
   .exhibits.show #content > h1 {
     text-align: center;
     width: 70%;
-    margin: 21px auto; }
+    margin: 21px auto; 
+
+  }
   .exhibits.summary #primary,
   #exhibit-blocks,
   #exhibit-pages {
@@ -811,7 +816,7 @@
     margin: auto; }
   #exhibit-pages ul {
     list-style: none;
-    font-size: 21px;
+    font-size: 25px;
     line-height: 31.5px;
     font-family: "Caudex", serif; 
     overflow:hidden;
