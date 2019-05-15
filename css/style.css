@@ -448,8 +448,8 @@
     width: auto;
     max-width: none; }
   .items.show.gallery .item-metadata {
-    width: 25%;
-    padding: 0 21px;
+    width: 35%;
+    padding: 0 41px;
     overflow-y: scroll;
     word-wrap: break-word; }
   .item-metadata h3 {
@@ -481,7 +481,7 @@
       background-color: #eee;
       position: absolute; }
     ul.item-pagination.navigation a {
-      padding: 10.5px;
+      padding: 8px;
       display: inline-block; }
   /* @end */
   /* @group ----- Items/Search ----- */
@@ -817,7 +817,7 @@
     margin: auto; }
   #exhibit-pages ul {
     list-style: none;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 31.5px;
     font-family: "Caudex", serif; 
     overflow:hidden;
