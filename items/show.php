@@ -46,6 +46,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 
     <h1><?php echo metadata('item', 'display_title'); ?></h1>
 
+
     <?php echo all_element_texts('item'); ?>
     
     <?php if (metadata('item', 'Collection Name')): ?>
@@ -78,10 +79,6 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
         <div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
     </div>
     
-    <div id="item-output-formats" class="element">
-        <h3><?php echo __('Output Formats'); ?></h3>
-        <div class="element-text"><?php echo output_format_list(); ?></div>
-    </div>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 </div>
