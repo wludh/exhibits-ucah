@@ -462,7 +462,8 @@
   .item-metadata nav {
     column-span: all;
     margin: 0 -21px;
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #eee; 
+    font-size:150%;}
   ul.item-pagination.navigation {
     column-span: all;
     display: -ms-flexbox;
