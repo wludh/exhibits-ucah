@@ -44,7 +44,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </ul>
     </nav>
 
-    <h1><?php echo metadata('item', 'display_title'); ?></h1>
+<!--    <h1><?php echo metadata('item', 'display_title'); ?></h1>-->
 
 
     <?php echo all_element_texts('item'); ?>
