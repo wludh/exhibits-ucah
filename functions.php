@@ -39,4 +39,5 @@ function bigpicture_featured_html() {
     }
     return $html;
 }
+
 ?>
