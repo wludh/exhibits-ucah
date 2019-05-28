@@ -282,6 +282,7 @@
 
   #featuredlink {
     font-style: italic;
+    font-size:80%;
   }
   #featured .record {
     background-size: cover;
