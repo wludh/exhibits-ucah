@@ -3,6 +3,6 @@
     set_current_record('exhibit', $exhibit);
     ?>
     <div class="record-meta">
-    <h3><?php echo link_to_exhibit(); ?></h3>
+    <h3><?php echo bigpicture_special_exhibit(); ?></h3>
     </div>
 </div>

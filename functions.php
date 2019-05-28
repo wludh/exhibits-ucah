@@ -39,5 +39,16 @@ function bigpicture_featured_html() {
     }
     return $html;
 }
+function bigpicture_special_exhibit($exhibit = null, $text = null, $props = array(), $exhibitPage = null)
+{
+    if (!$exhibit) {
+        $exhibit = get_current_record('exhibit');
+    }
+    $uri = exhibit_builder_exhibit_uri($exhibit, $exhibitPage);
+    $text = !empty($text) ? $text : html_escape($exhibit->title);
+    return '<a href="' . html_escape($uri) .'" '. tag_attributes($props) . '>' . $text . '</a>' . '<br />' . 
+    '<span id="featuredlink"><a href="' . html_escape($uri) .'" '. tag_attributes($props) . '>' . 'enter the exhibit' . '</a></span>'
+    ;
+}
 
 ?>
