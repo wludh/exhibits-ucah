@@ -802,7 +802,7 @@
     margin: auto; }
     .exhibits.summary .summary-header:before {
       content: "";
-      /*background-color: rgba(0, 0, 0, 0.5);*/
+      background-color: rgba(0, 0, 0, 0.15);
       position: absolute;
       top: 0;
       right: 0;
@@ -813,7 +813,8 @@
       z-index: 1;
       padding: 42px 21px; 
         font-size:30px;
-    line-height: 30px;}
+    line-height: 30px;
+    text-align:center;}
   .exhibits.show #content > h1 {
     text-align: center;
     width: 70%;
@@ -831,7 +832,8 @@
     line-height: 31.5px;
     font-family: "Caudex", serif; 
     overflow:hidden;
-
+    margin:auto;
+    width:90%;
   }
   #exhibit-pages li {
     float:left;

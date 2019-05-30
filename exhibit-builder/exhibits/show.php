@@ -1,10 +1,24 @@
+
+
 <?php
 echo head(array(
     'title' => metadata('exhibit_page', 'title') . ' &middot; ' . metadata('exhibit', 'title'),
     'bodyclass' => 'exhibits show'));
 ?>
+<!--added nav-->
 
+<?php
+$pageTree = exhibit_builder_page_tree();
+if ($pageTree):
+?>
+<nav id="exhibit-pages">
+    <?php echo $pageTree; ?>
+</nav>
+<?php endif; ?>
+<!--end of nav --> 
 <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1>
+
+
 
 <div id="exhibit-blocks">
 <?php exhibit_builder_render_exhibit_page(); ?>
